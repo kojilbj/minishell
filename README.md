@@ -23,23 +23,23 @@ minishellは、Bashを再実装し、プロンプトの構文解析、リダイ�
 
 ## 使用方法
 ```bash
-./minishell
+~: ./minishell
 #標準入力
-/Users/watanabekoji/minishell: cat
+minishell: cat
 Hello World
 Hello World
 ^C
 #出力のリダイレクト
-/Users/watanabekoji/minishell: cat > test.txt
+minishell: cat > test.txt
 Hello World
 #入力のリダイレクト
-/Users/watanabekoji/minishell: < test.txt cat
+minishell: < test.txt cat
 Hello World
 #パイプ
-/Users/watanabekoji/minishell: cat test.txt | wc
+minishell: cat test.txt | wc
        1       2      12
 #パイプと出力のリダイレクト
-/Users/watanabekoji/minishell: cat test.txt | wc > wc.txt
-/Users/watanabekoji/minishell: cat wc.txt 
+minishell: cat test.txt | wc > wc.txt
+minishell: cat wc.txt 
        1       2      12
 ```
